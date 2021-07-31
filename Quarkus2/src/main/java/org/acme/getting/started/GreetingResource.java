@@ -20,5 +20,5 @@ public class GreetingResource {
     public String teste() {
         return "Ponto de acesso dentro doteste";
     }
-    //teste
+    
 }
