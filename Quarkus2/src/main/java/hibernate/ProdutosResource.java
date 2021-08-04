@@ -10,6 +10,7 @@ import java.util.List;
 @Path("/produtos")
 public class ProdutosResource {
 
+    @Inject ProdutoService produtoService;
     @Inject
     EntityManager entityManager;
 
@@ -18,7 +19,8 @@ public class ProdutosResource {
     )
     public List<Produto> getProdutos()
     {
-        return  entityManager.createQuery("select p from Produto p", Produto.class).getResultList();
+        return produtoService.getProdutos();
+       // return  entityManager.createQuery("select p from Produto p", Produto.class).getResultList();
     }
 
     @POST
@@ -26,6 +28,8 @@ public class ProdutosResource {
     @Consumes(value = MediaType.APPLICATION_JSON    )
     public void addProduto(Produto p)
     {
-        entityManager.persist(p);
+        produtoService.addProduto(p);
+        //entityManager.persist(p);
+
     }
 }

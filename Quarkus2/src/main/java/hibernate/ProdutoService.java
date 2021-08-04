@@ -1,5 +1,7 @@
 package hibernate;
 
+import org.eclipse.microprofile.opentracing.Traced;
+
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
@@ -11,6 +13,7 @@ import javax.ws.rs.core.MediaType;
 import java.util.List;
 
 @ApplicationScoped
+@Traced
 public class ProdutoService {
 
     @Inject EntityManager entityManager;
