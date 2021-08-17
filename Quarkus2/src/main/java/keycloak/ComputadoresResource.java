@@ -33,9 +33,9 @@ public class ComputadoresResource {
     @Path("protegido")
     @Produces(MediaType.TEXT_PLAIN)
     @RolesAllowed("user")
-    @SecurityRequirement(name = "quarkus-oauth")
+   // @SecurityRequirement(name = "quarkus-oaut")
     public String protegido() {
-        return "hello protegido ";//+identity.getPrincipal().getName();
+        return "hello protegido "+identity.getPrincipal().getName();
     }
 
     /*

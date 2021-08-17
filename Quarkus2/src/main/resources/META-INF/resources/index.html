@@ -56,8 +56,13 @@
         code {
             font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
             font-size: 87.5%;
-            color: #e83e8c;
+            color: #002afc;
             word-break: break-word;
+        }
+
+        a{
+            color: red;
+            font-family: FreeMono;
         }
 
         .left-column {
@@ -109,24 +114,43 @@
 <body>
 
 <div class="banner lead">
-    Your new Cloud-Native application is ready!
+    Seu novo Cloud-Native esta pronto!!!!!!
 </div>
 
 <div class="container">
     <div class="left-column">
-        <p class="lead"> Congratulations, you have created a new Quarkus cloud application.</p>
+        <p class="lead"> Bora fazer a configuração, você critou um novo projeto em quarkus.</p>
 
-        <h2>What is this page?</h2>
+        <h2>Qual é essa página?</h2>
 
         <p>This page is served by Quarkus. The source is in
             <code>src/main/resources/META-INF/resources/index.html</code>.</p>
 
-        <h2>What are your next steps?</h2>
+        <h2>URLS que estão respondendo</h2>
+        <ul type="square">
+            <li><p><code>http://localhost:8080/produtos</code>. Para acessar clique <a href="http://localhost:8080/produtos">aqui</a>.</p>
+            </li>
+            <li><p><code>http://localhost:8080/computadores/publico</code>. Para acessar clique <a href="http://localhost:8080/computadores/publico">aqui</a>.</p>
+            </li>
+            <li><p><code>http://localhost:8080/computadores/privado</code>. Para acessar clique <a href="http://localhost:8080/computadores/publico">aqui</a>. (Esse aqui tem senha) </p>
+            </li>
+            <li><p><code>http://localhost:8080/caros</code>. Para acessar clique <a href="http://localhost:8080/caros">aqui</a>.</p>
+            </li>
+
+        </ul>
+            <h2>Comandos atalhos.</h2>
+
+
 
         <p>If not already done, run the application in <em>dev mode</em> using: <code>./mvnw compile quarkus:dev</code>.
+
+
         </p>
         <ul>
-            <li>Your static assets are located in <code>src/main/resources/META-INF/resources</code>.</li>
+            <li>Comando para execular em modo dev: <code>./mvnw  package -Dquarkus.profile=dev</code>.</li>
+            <li>Comando para gerar o Pnative do projeto:<code>./mvnw  package -Dquarkus.profile=dev -Pnative</code>.</li>
+            <li>Listar as extensões disponiveis:<code>./mvnw quarkus:list-extensions</code>.</li>
+            <li>Listar as add um extensão: <code>./mvnw quarkus:add-extension -Dextension="EXTENSÃO VAI AQUI"</code>.</li>
             <li>Configure your application in <code>src/main/resources/application.properties</code>.</li>
             <li>Quarkus now ships with a <a href="/q/dev/">Dev UI</a> (available in dev mode only)</li>
             <li>Play with the provided code located in <code>src/main/java</code>:</li>
@@ -146,7 +170,7 @@
                 <li>GroupId: <code>org.acme</code></li>
                 <li>ArtifactId: <code>estudo-quarkus1</code></li>
                 <li>Version: <code>1.0.0-SNAPSHOT</code></li>
-                <li>Quarkus Version: <code>2.1.0.Final</code></li>
+                <li>Quarkus Version: <code>2.1.2.Final</code></li>
             </ul>
         </div>
         <div class="right-section">
