@@ -13,15 +13,16 @@ import java.util.List;
 
 @Path("/pets")
 public class PetResource {
-
+/*
 	@Inject
 	@RestClient
 	petService petService;
-
+*/
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("findByStatusLocal")
 	public List<Pet> methodname(@QueryParam("status") String status) {
-		return petService.findByStatus(status);
+		//return petService.findByStatus(status);
+		return null;
 	}
 }

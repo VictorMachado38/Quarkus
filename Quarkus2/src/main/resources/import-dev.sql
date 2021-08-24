@@ -2,6 +2,8 @@ insert into produto(id, nome) values(1, 'Teste');
 insert into produto(id, nome) values(2, 'Teste Novo 1');
 insert into produto(id, nome) values(3, ' ssssss Teste Novo 1');
 insert into produto(id, nome) values(4, ' sera que vai  Teste Novo 1');
+insert into animal(id, nome, peso) values(1, 'Animal  Dev 1', 7000);
+insert into animal(id, nome, peso) values(2, 'Animla dev 2', 10000);
 
 
 

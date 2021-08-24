@@ -122,6 +122,10 @@
       <version>3.12.0</version>
       <scope>compile</scope>
     </dependency>
+      <dependency>
+          <groupId>io.quarkus</groupId>
+          <artifactId>quarkus-junit5</artifactId>
+      </dependency>
   </dependencies>
   <build>
     <plugins>
