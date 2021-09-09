@@ -9,11 +9,8 @@ public class Pessoa extends PanacheEntity {
 
     private String nome;
 
-    private Tipo tpo;
+    private String tipo;
 
-    public enum Tipo{
-        PF,PJ;
-    }
 
     public String getNome() {
         return nome;
@@ -23,11 +20,11 @@ public class Pessoa extends PanacheEntity {
         this.nome = nome;
     }
 
-    public Tipo getTpo() {
-        return tpo;
+    public String getTipo() {
+        return tipo;
     }
 
-    public void setTpo(Tipo tpo) {
-        this.tpo = tpo;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 }

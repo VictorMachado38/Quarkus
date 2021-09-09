@@ -4,7 +4,7 @@ public class IncluirPessoaDTO {
 
     public String nome;
 
-    public Pessoa.Tipo tipo;
+    public String tipo;
 
     public String getNome() { 
         return nome;
@@ -14,11 +14,11 @@ public class IncluirPessoaDTO {
         this.nome = nome;
     }
 
-    public Pessoa.Tipo getTipo() {
+    public String getTipo() {
         return tipo;
     }
 
-    public void setTipo(Pessoa.Tipo tipo) {
+    public void setTipo(String tipo) {
         this.tipo = tipo;
     }
 }
