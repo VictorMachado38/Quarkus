@@ -31,11 +31,7 @@ public class AnimalResource {
 	@Produces(MediaType.APPLICATION_JSON)
 	@APIResponse(
 	responseCode = "200",
-	description = "OBOAAAAAAAA deu BOM!"
-
-)
-
-
+	description = "OBOAAAAAAAA deu BOM!")
 	public List<Animal> bucarAnimal(){
 
 		return animalDAO.getAnimal();
