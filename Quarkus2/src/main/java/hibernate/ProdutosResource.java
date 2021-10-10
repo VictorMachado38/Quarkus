@@ -30,6 +30,7 @@ public class ProdutosResource {
     {
         produtoService.addProduto(p);
         //entityManager.persist(p);
+        //teste
 
     }
 }
