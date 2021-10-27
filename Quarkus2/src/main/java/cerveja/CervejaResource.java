@@ -49,12 +49,23 @@ public class CervejaResource {
 
      */
 
+    @Inject
+    JsonWebToken token;
+
+    @Inject
+    @Claim(standard = Claims.sub)
+    String sub;
+
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     //@Authenticated
     @RolesAllowed("Funcionario")
     public String nome(){
-        System.out.println("-----------------------AA--------");
+        System.out.println("----------------------- System.out.println(token.getRawToken()) ----------------------- ");
+        System.out.println(token.getRawToken());
+
+        System.out.println("----------------------- SSystem.out.println(sub); ----------------------- ");
+        System.out.println(sub);
         return "Heineken";
     }
 
